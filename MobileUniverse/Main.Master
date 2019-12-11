@@ -1,0 +1,87 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="MobileUniverse.Main" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <title>Mobile Universe</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/font-awesome.min.css" rel="stylesheet" />
+    <link href="Content/StyleSheet1.css" rel="stylesheet" />
+    <link href="Content/Main.css" rel="stylesheet" />
+    <script src="Scripts/jquery-3.3.1.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+</head>
+<body>
+    <div id="main">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" runat="server" href="~/Home.aspx">Mobile Universe</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a runat="server" href="~/Home.aspx" class="nav-link">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a runat="server" href="~/Cart.aspx" class="nav-link">Cart</a>
+                        </li> 
+                        <li class="nav-item">
+                            <a runat="server" href="~/About.aspx" class="nav-link">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a runat="server" href="~/Contact.aspx" class="nav-link">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a runat="server" href="~/Mobiles.aspx" class="nav-link">Mobiles</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <footer>
+            <br />
+            <div id="footerdiv" class="row">
+               
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <aside id="contact-info-widget-3" class="widget">
+                        <h3 class="widget-title">Contact</h3>
+                        <div class="contact-info">
+                            <ul class="contact-details list list-icons">
+                                <li><strong> Address : </strong>Fairview Park</li>
+                                <li id="emailA"><strong> Email : </strong> <span><a href="mailto:support@MobileUniverse.com">support@MobileUniverse.com</a></span></li>
+                            </ul>
+                        </div>
+                    </aside>
+                </div>
+                <div class="col-lg-6 col-md-6  col-sm-6">
+                    <aside id="contact-info-widget-4" class="widget">
+                        <h3 class="widget-title">Social Links</h3>
+                        <div class="share-links">
+                            <a href="https://snapchat.com/mobileuniverse" rel="nofollow" target="_blank" class="fa fa-snapchat" ></a>
+                            <a href="https://www.youtube.com/channel/mobileuniverse" rel="nofollow" class="fa fa-youtube"></a>
+                            <a href="skype:mobileuniverse?chat" rel="nofollow" target="_blank" class="fa fa-skype"></a>
+                            <a href="https://facebook.com/mobileuniverse" rel="nofollow" target="_blank" class="fa fa-facebook" ></a>
+                        </div>
+
+                    </aside>
+                </div>
+              
+                    <div class="offset-lg-3 col-lg-4 col-xs-12" style="text-align:center;color:white"> Mobile Universe. All Rights Reserved. &#169; 2019 Mobile Universe.</div>
+                    
+                    
+            </div>
+               
+        </footer>
+    </div>
+</body>
+</html>
